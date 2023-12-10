@@ -11,6 +11,10 @@ h1 {
   font-size: 2rem;
 }
 
+my-title h1 {
+  color: red;
+}
+
 nav-component li {
   margin-block: 1rem;
 }

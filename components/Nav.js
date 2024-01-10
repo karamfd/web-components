@@ -1,10 +1,6 @@
 class Nav extends HTMLElement {
   constructor() {
     super();
-  }
-
-  // When the component is loaded into the DOM
-  connectedCallback() {
     this.innerHTML = `
       <nav>
         <ul>

@@ -18,3 +18,26 @@ class Title extends HTMLElement {
 }
 
 customElements.define("my-title", Title);
+
+// Code below also works
+// class Title extends HTMLElement {
+//   constructor() {
+//     super();
+
+//     const template = document.createElement("template");
+//     const styleSheet = new CSSStyleSheet();
+
+//     styleSheet.replaceSync(`h1 { color: red; }`);
+//     template.innerHTML = `
+//       <h1>
+//         <slot name="title">Title Page</slot>
+//       </h1>
+//     `;
+
+//     const shadow = this.attachShadow({ mode: "closed" });
+//     shadow.appendChild(template.content.cloneNode(true));
+//     shadow.adoptedStyleSheets = [styleSheet];
+//   }
+// }
+
+// customElements.define("my-title", Title);

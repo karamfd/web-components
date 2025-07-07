@@ -1,7 +1,5 @@
 class Title extends HTMLElement {
-  constructor() {
-    super();
-
+  connectedCallback() {
     this.root = this.attachShadow({ mode: "closed" });
 
     const styleSheet = new CSSStyleSheet();
@@ -21,9 +19,7 @@ customElements.define("my-title", Title);
 
 // Code below also works
 // class Title extends HTMLElement {
-//   constructor() {
-//     super();
-
+//   connectedCallback() {
 //     const template = document.createElement("template");
 //     const styleSheet = new CSSStyleSheet();
 

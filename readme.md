@@ -1,3 +1,3 @@
 # Web Components
 
-Learning about standard web components
+Requires a live server to prevent `Cors policy` errors.
